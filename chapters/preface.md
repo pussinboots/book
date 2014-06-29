@@ -1,0 +1,7 @@
+# Preface
+
+This is my first book and was motivated by the relativ new project [softcover.io](http://softcover.io). It's support you to become a author very quickly by take care of publishing and transforming into different book types like mobi, epub and pdf. It combines two great languages for writing articles and books the markdown and latex. I'am really familiar to write markdown articles for github projects and i wrote my first thesis with latex. 
+
+What topic should i pick to write about it. So after a while i decided to write down my knowledges and experiences with the github project called [unitcover](https://github.com/pussinboots/unitcover) that i'am developing since one week ago. So this book should be a practical guide to develop web applications with angularjs and play framework version 2.3 (Scala). It will cover many aspects from development on a local machine to continous testing, integration and deployment. 
+
+There are a lot of great projects out there they will help you to build a complete continous pipeline from testing to deployment. This projects will also be introduced and explained how to use it to achieve the big goal of the continous cycle. That means the complete continous cycle from commit a change perform build than test the change and than deploy it full automaticly. I will try to discover some theriotical background for the continous topic but i mentioned it is more a pratical guide. So i try to structured chapters to be independent.
