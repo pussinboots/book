@@ -5,6 +5,7 @@ tableofcontents
 preface.md
 mainmatter:
 webapp.md
+project.md
 devel.md
 tests.md
 build.md
