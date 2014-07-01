@@ -5,6 +5,8 @@ example Web Application is a full functional one that i develop in my spare time
 my development of the [unitcover](https://github.com/pussinboots/unitcover) project. And what is more obviouslly to take
 that project to demonstrate the complete development process from a project concept to a launched product.
 
+\todo{say something more about the begining phase of the unitcover project \ldots}
+
 ##Why
 
 From my work as a Java Developer i'am really familiar with Continous Integration Systems like Cruisecontrol from the older days
