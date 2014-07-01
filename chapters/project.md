@@ -14,17 +14,23 @@ where [Ant](http://ant.apache.org/) was the most popular Build System for Java p
 a very good alternative for Open Source Projects there are hosted by Github called [Travis CI](https://travis-ci.org/). It is very
 good at building project of different languages with very few configuration needed. For a detailed explanation for Travis See Chapter Build Management. In a comparisson with Jenkins Travis CI miss some report capabilities like a page contains test reports for every build.
 
+The new offered feature named badge of services like Travis CI, coveralls, david-dm and a lot more see Build Management Chapter. The idea of a test badge was born so i discover the [shields.io](http://shields.io) service. With that service it can easily realized to implement little nice and informative badges. This bagdes can be used in the README.md on Github to display build qualitive metrics in a very compact and actual way directly in the project documentation. That was the ground idea for develop this project display a badge that show the test report of the latest build in a very compact way in the README.MD file on Github.
+
 ##What is it about
 
 Continous Integration is not only to build a project and has maybe at the end a an artifcats its also about to collect quality data of the build like test reports, test coverage, code quality analyse reports and so on. This report data are generated during a Travis CI build but not display there. For test coverage i found a really good project called [coveralls.io](http://coveralls.io) that store and display the test coverage for every Travis build. But for test reports i found no similar projects so brave new open source world than develop one. And here it is the unitcover project store and display test results for all running tests during the Travis CI build.
 
-The general idea behind the unitcover project is to make test results public and accessable via the web and also collect historical data like test report trends since the last x builds.  
+The general idea behind the unitcover project is to make test results public and accessable via the web and also collect historical data like test report trends since the last x builds. To build this project a lot of great Open Source Services and Software will be used. First the great and reliable Github Source Management is used and it offers a lot os services around SM like issue tracking, markdown for documentation files and a lot more.      
 
 ##Next steps
 
-After having a idea is just the beginning of a project. Than i collect some features and group them by priority of needed and nice. So start with that they are needed follow the nice once. 
+After having a idea is just the beginning of a project. Than i collect some features and group them by priority of needed and nice. So start with that they are needed follow the nice once or changed between them to keep the self motivation high. If write some lines of code and more or less you see the results and the new upcoming possible features that keep you in flow. 
 
 \missingfigure{Add a scrennshot of the unitcover trello board here.}
+
+So the goal to achieve is to display test report badges in the manner of for example Tests passed 45 or in the failure/error case Tests failed/errored 5 to get a quick information of the test quality of the latest build. With that defined goal in mind we sketch the first architecure draft. 
+
+What will be the best choice of the framework and language to use to achieve the goal and that also very quick. I had some experience with angularjs and Play framework (the scala version) and found both will be good to achieve the goal very quick. With angularjs and his very big community it is very simple to implement a HTML 5 web application based on an Rest API for backend communication. The good [bootstrap](http://getbootstrap.com/) integration is also a big plus for angularjs. The Play framework is also good designed to build a complete web application but we will use it as Rest framework because with it route approach it is very easy to map url calls to method invocations and the json and xml support is also wonderfull.
 
 ##Architecture
 
@@ -33,5 +39,7 @@ After having a idea is just the beginning of a project. Than i collect some feat
 ###Upload
 
 ###Frontend
+
+###API
 
 ###Backend
