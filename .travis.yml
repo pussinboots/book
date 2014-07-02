@@ -2,20 +2,18 @@ language: ruby
 rvm:
 - 1.9.3
 script: softcover deploy
-#install: gem install softcover
+install: gem install softcover
 before_script:
  - echo api_key":" $SOFTCOVER_API_KEY  > .softcover
- - cat .softcover
 before_install:
-#- 'echo ''api_key: $SOFTCOVER_API_KEY'' > .softcover'
-#- yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
-#- sudo apt-get update -qq
-#- sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
-# - sudo apt-get install -qq inkscape
-#- sudo python -c "import sys; py3 = sys.version_info[0] > 2; u = __import__('urllib.request' if py3 else 'urllib', fromlist=1); exec(u.urlopen('http://status.calibre-ebook.com/linux_installer').read()); main(install_dir='`echo ~`')"
-#- export PATH=$PATH:`echo ~`
-#- curl -O -L https://github.com/IDPF/epubcheck/releases/download/v3.0/epubcheck-3.0.zip && unzip epubcheck-3.0.zip -d ~
-#- curl -o ~/kindlegen http://softcover-binaries.s3.amazonaws.com/kindlegen && chmod +x ~/kindlegen
+ - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
+ - sudo apt-get update -qq
+ - sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
+ - sudo apt-get install -qq inkscape
+ - sudo python -c "import sys; py3 = sys.version_info[0] > 2; u = __import__('urllib.request' if py3 else 'urllib', fromlist=1); exec(u.urlopen('http://status.calibre-ebook.com/linux_installer').read()); main(install_dir='`echo ~`')"
+ - export PATH=$PATH:`echo ~`
+ - curl -O -L https://github.com/IDPF/epubcheck/releases/download/v3.0/epubcheck-3.0.zip && unzip epubcheck-3.0.zip -d ~
+ - curl -o ~/kindlegen http://softcover-binaries.s3.amazonaws.com/kindlegen && chmod +x ~/kindlegen
 env:
   global:
     secure: UoZYz335ySJTJtjk2XXtTozwe6mgBjSuOWscXonSU/K9gqhmrvl79t2GEZQ7r6rqLW22GD/MZdx6FAD1EyLv7xq9FPmQIWpeuiL3TLI1vFddD1ldUMrVcB1oNw8MH/8yXLbWt67DRbvm+6d7otWnk4BjvKsVxhQtOGkn+PUh1U0=
