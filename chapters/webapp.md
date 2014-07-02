@@ -23,7 +23,11 @@ The short definition from wikipedia says \todo{quotations} "JavaScript (JS) is a
 
 \todo{a little history info}
 
-I guess the need for Web Application that are renderd on the server side is over and waste a lot of resources on the server side. What belongs to the client should be performed on the client side. The tool support for JavaScript is more or less powerful like for Java. They are package manager, test frameworks, server runtimes, code completion and all what you can imagine and exists for your programming language of choice. 
+I guess the need for Web Application that are renderd on the server side is over and waste a lot of resources on the server side. What belongs to the client should be performed on the client side. The tool support for JavaScript is more or less powerful like for Java. They exists package manager, test frameworks, server runtimes, code completion and all what you can imagine and exists for your programming language of choice.
+
+###Package Management
+
+The [bower](http://bower.io/) will come to rescue you. It brings the maven familiar dependency management to Web Applications that use JavaScript in the browser. 
 
 ##Frameworks
 
