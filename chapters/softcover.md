@@ -21,6 +21,9 @@ a Build Server like Travis CI to build the actual version of your book with soft
 
 With the following .travis.yml file it was possible to setup a automated build and publishing of that book after i commit changes to Github.
 \todo{link to content not embed}
+\begin{codelisting}
+\codecaption{.travis yml for that book}
+\label{code:.travis.yml}
 ```yaml
 language: ruby
 rvm:
@@ -41,6 +44,7 @@ before_install:
  - curl -O -L https://github.com/IDPF/epubcheck/releases/download/v3.0/epubcheck-3.0.zip && unzip epubcheck-3.0.zip -d ~
  - curl -o ~/kindlegen http://softcover-binaries.s3.amazonaws.com/kindlegen && chmod +x ~/kindlegen
 ```
+\end{codelisting}
 The build will take more than 10 minutes that is to long for fast feedback but could be reduced in the future. It takes so long
 because it has to install the complete texlive latex distribution, then softcover and its dependencies for every build.
 \todo{reduce build time or give a hint}
