@@ -1,16 +1,35 @@
 #Web Application
 
+This chapter discover the new technologies, frameworks and tools to develop Web Application these days. Here is the web application defintion from wikipedia.
+\todo{quotations with latex}
+"A web application or web app is any application software that runs in a web browser or is created in a browser-supported programming language (such as the combination of JavaScript, HTML and CSS) and relies on a common web browser to render the application". 
+The term Web Application describe for me an application that run and is accessable with a browser. It use a couple of technologies called HTML 5.
+
+The border between Web Applications and Mobile Applications are very fluent and each native Mobile Application could also be implemented as complete HTML 5 Web Application the customer see no differences between them. 
+
 ##HTML 5
+
+\todo{quotations}
+The short definition from wikipedia "HTML5 is a core technology markup language of the Internet used for structuring and presenting content for the World Wide Web." With the HTML 5 technology the browser become the new what I called BVM (stands for Browser Virtual Machine like the JVM Java Virtual Machine). The modern browsers offer a couple of features to write whole web application with the JavaScript programming language. It offer local storage similar to an Relational Database called WebSQL. You could think of HTML 5 as a GUI framework to develop Graphical User Interfaces that run inside the browser and with the HTML 5 markup language you describe the look and feel of your GUI. And with the JavaScript language you implement the view logic.
+
+##CSS 3
+
+The short definition from wikipedia \todo{quotations} "Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language."
+I'am not an expert in css development but it is a powerful language to specify the design and the format for the HTML view. There exists a lot of CSS frameworks like [bootstrap](http://getbootstrap.com/) that offer you a complete styled design ready to use and cover also mobile devices. There also a lot of angularjs modules that integrates the boostrap framework to use it very simple with angularjs
 
 ##Javascript
 
+The short definition from wikipedia says \todo{quotations} "JavaScript (JS) is a dynamic computer programming language.[5] It is most commonly used as part of web browsers, whose implementations allow client-side scripts to interact with the user, control the browser, communicate asynchronously, and alter the document content that is displayed". JavaScript is a very powerful and underestimated programming language that is \todo{older tha Java ???} older than the Java programming language. With the rehype of the functional programing model JavaScript becomes the language of choice for implementing HTML 5 Web Application that run completly in the browser.
+
+\todo{a little history info}
+
+I guess the need for Web Application that are renderd on the server side is over and waste a lot of resources on the server side. What belongs to the client should be performed on the client side. The tool support for JavaScript is more or less powerful like for Java. They are package manager, test frameworks, server runtimes, code completion and all what you can imagine and exists for your programming language of choice. 
+
+##Frameworks
+
 ###angularjs
 
-##Rest Services
-
 ###play framework
-
-###spray
 
 ##Database
 
