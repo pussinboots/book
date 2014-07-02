@@ -4,7 +4,7 @@ rvm:
 script: softcover deploy
 #install: gem install softcover
 before_script:
- - sh -c "echo api_key: $SOFTCOVER_API_KEY > .softcover"
+ - echo api_key":" $SOFTCOVER_API_KEY  > .softcover
  - cat .softcover
 before_install:
 #- 'echo ''api_key: $SOFTCOVER_API_KEY'' > .softcover'
