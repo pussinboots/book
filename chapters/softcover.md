@@ -1,4 +1,6 @@
-# Softcover
+# This Book
+
+## Softcover
 
 [Softcover](https://www.softcover.io) is a publishing platform for technical authors. There exists also a very good 
 [Manual](http://manual.softcover.io/) about what softcover is and what it does. The idea to write this book was inspired after
@@ -48,5 +50,4 @@ before_install:
 The build will take more than 10 minutes that is to long for fast feedback but could be reduced in the future. It takes so long
 because it has to install the complete texlive latex distribution, then softcover and its dependencies for every build.
 \todo{reduce build time or give a hint}
-But what we have achieved so far is that after a commit to github rather than ten minutes (or less more) you have a new published version of pdf, 
-mobi and epub ready for reading online on the [softcover](https://www.softcover.io) plattform.
+But what we have achieved so far is that after a commit to github rather than ten minutes (or less more) you have a new published version of pdf, mobi and epub ready for reading online on the [softcover](https://www.softcover.io) plattform.
