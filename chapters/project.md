@@ -32,6 +32,13 @@ So the goal to achieve is to display test report badges in the manner of for exa
 
 What will be the best choice of the framework and language to use to achieve the goal and that also very quick. I had some experience with angularjs and Play framework (the scala version) and found both will be good to achieve the goal very quick. With angularjs and his very big community it is very simple to implement a HTML 5 web application based on an Rest API for backend communication. The good [bootstrap](http://getbootstrap.com/) integration is also a big plus for angularjs. The Play framework is also good designed to build a complete web application but we will use it as Rest framework because with it route approach it is very easy to map url calls to method invocations and the json and xml support is also wonderfull.
 
+The consequence of the choosen frameworks is that the unitcover project will be a multi programming language project. That could have some disadvantage for building and development it could become much complex. But after a while of development i discover that this disadvantage will be more or less rather an advantage. The used programming language will be JavaScript and Scala and both have a great build and development tool support and both cover very well what is needed for the their layer. 
+
+The JavaScript eco system besides angularjs cover all aspects of developing a web application from package management, testing, coverage, debugger and so on. For example with the [bower](http://bower.io/) project there exist a really great package management tool it cover all needs and offer new features directly for html, css and JavaScript files. The use of the angularjs framework ships the view layer completly to were it belongs to the web application files. And bower brings what we loved about package management like versionized dependency management and publishing to the HTML 5 web applications. Like with maven or for Scala sbt define the dependencies and bower will fetch them for you. But here come the glue it not only fetch it for you it also inject javascript and css reference tags directly in your html file. Gone the time where you have to put script tags in your html files by hand for new javascript dependencies or to change the url of a script tag to update the used version. For a detail explanation of bower look into the build management chapter. 
+
+[sample-footnode] The term web application files means all files that are common for HTML 5 web applications like html of course, css, javascript, coffee, less and so on.
+
+
 ##Architecture
 
 \missingfigure{Add simple architectural overview contains the layer upload, frontend and backend and also the used languages and frameworks.}
