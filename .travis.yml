@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 1.9.3
 script: softcover deploy
-install: gem install softcover
+#install: gem install softcover
 before_script:
 - echo "api_key: $SOFTCOVER_API_KEY" >> .softcover
 - cat .softcover
