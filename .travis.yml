@@ -1,4 +1,5 @@
-script: softcover build:pdf
+language: ruby
+script: softcover deploy
 before_install:
   - sudo gem install softcover
   - sudo apt-get update -qq
