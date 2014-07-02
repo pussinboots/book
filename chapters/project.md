@@ -34,10 +34,16 @@ What will be the best choice of the framework and language to use to achieve the
 
 The consequence of the choosen frameworks is that the unitcover project will be a multi programming language project. That could have some disadvantage for building and development it could become much complex. But after a while of development i discover that this disadvantage will be more or less rather an advantage. The used programming language will be JavaScript and Scala and both have a great build and development tool support and both cover very well what is needed for the their layer. 
 
-The JavaScript eco system besides angularjs cover all aspects of developing a web application from package management, testing, coverage, debugger and so on. For example with the [bower](http://bower.io/) project there exist a really great package management tool it cover all needs and offer new features directly for html, css and JavaScript files. The use of the angularjs framework ships the view layer completly to were it belongs to the web application files. And bower brings what we loved about package management like versionized dependency management and publishing to the HTML 5 web applications. Like with maven or for Scala sbt define the dependencies and bower will fetch them for you. But here come the glue it not only fetch it for you it also inject javascript and css reference tags directly in your html file. Gone the time where you have to put script tags in your html files by hand for new javascript dependencies or to change the url of a script tag to update the used version. For a detail explanation of bower look into the build management chapter. 
+The JavaScript eco system besides angularjs cover all aspects of developing a web application from package management, testing, coverage, debugger and so on. For example with the [bower](http://bower.io/) project there exist a really great package management tool it cover all needs and offer new features directly for html, css and JavaScript files. The use of the angularjs framework ships the view layer completly to were it belongs to the web application files. And bower brings what we loved about package management like versionized dependency management and publishing to the HTML 5 web applications. Like with maven or for Scala sbt define the dependencies and bower will fetch them for you. But here come the glue it not only fetch it for you it also inject javascript and css reference tags directly in your html file. Gone the time where you have to put script tags in your html files by hand for new javascript dependencies or to change the url of a script tag to update the used version. For a detail explanation of bower look into the build management chapter.
+\todo{short description of karma, jasmine and istanbul for testing purpose of javascript code \ldots}
+
+The scala eco system can be compared with the java eco system there is sbt as package management and a lot of good testing frameworks for example [spec2](http://etorreborre.github.io/specs2/) and the play framwork it self has some very good features for quick development like class reloading, wonderful test capabilities and big community with extensions. That make the scala language very productive and quick to code something.
+
+Next to the decision of the core frameworks and programming languages to use we will got to the Architecture draft of the unitcover project. Next chapter Architequre.
+
+\todo{maybe add summary box here and think of it general use}
 
 [sample-footnode] The term web application files means all files that are common for HTML 5 web applications like html of course, css, javascript, coffee, less and so on.
-
 
 ##Architecture
 
