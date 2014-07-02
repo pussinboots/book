@@ -21,7 +21,7 @@ a Build Server like Travis CI to build the actual version of your book with soft
 
 With the following .travis.yml file it was possible to setup a automated build and publishing of that book after i commit changes to Github.
 \todo{link to content not embed}
-```yml
+```yaml
 language: ruby
 rvm:
 - 1.9.3
