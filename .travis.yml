@@ -5,7 +5,7 @@ script: softcover deploy
 install: gem install softcover
 before_install:
 #- 'echo ''api_key: $SOFTCOVER_API_KEY'' > .softcover'
-- echo "api_key: $SOFTCOVER_API_KEY" > .softcover
+- echo "api_key: $SOFTCOVER_API_KEY" >> .softcover
 - cat .softcover
 - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
 - sudo apt-get update -qq
