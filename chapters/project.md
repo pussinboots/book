@@ -1,9 +1,6 @@
 #Project
 
-To illustrate the concepts and approaches of Continous Integration and Deployment we will develop a Web Application. This
-example Web Application is a full functional one that i develop in my spare time. The idea to write this book rise during 
-my development of the [unitcover](https://github.com/pussinboots/unitcover) project. And what is more obviouslly to take
-that project to demonstrate the complete development process from a project concept to a launched product.
+This chapter illustrate the project idea that will be implemented using the newest html 5 technologies to illustrate the concepts and approaches of Continous Integration and Deployment. The Web Application we will develop is a full functional one. The idea to write this book rise during my development of the [unitcover](https://github.com/pussinboots/unitcover)project. And what is more obviouslly to take that project to demonstrate the complete development process from a project concept to a launched product.
 
 \todo{say something more about the begining phase of the unitcover project \ldots}
 

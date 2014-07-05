@@ -5,8 +5,9 @@ tableofcontents
 preface.md
 mainmatter:
 softcover.md
-webapp.md
 project.md
+webapp.md
+database.md
 devel.md
 tests.md
 build.md
