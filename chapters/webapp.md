@@ -93,22 +93,50 @@ And the return statements are not nessary but coffeescript always set return key
 
 This chapter introduce the web frameworks we will used to implement the web application unitcover. They are a lot of good web frameworks out there so it is more a problem to choose the right one that fit your needs. In the chapter Project we have define the web application architecture and the goal what we want to achieve with the web application.
 
-With the project vision in mind we can start the looking of the right frameworks to realize our vision. The project will have different layers like the View, API, Database. So it possible to use a complete 
+
+With the project vision in mind we can start the looking of the right frameworks to realize our vision. The project will have different layers like the View, API, Database. So it possible to use a full stack framework like Ruby on Rails or the play framework to get a running application very fast. The use of full stack frameworks has a lot of advantages like they structure your project have build support, library integration and so on but this advantages has also some drawbacks. Of course they make it very simple to start web application development but after a while you got to the spot where there is a gap between the full stack framework what you use and the task you want to solve. Don't understand me wrong with a bit of encourage you could solve it. But maybe they are tools and frameworks out there they solve it easier or better but has no integration with the full stack framework. So at this point you have to decide solve it by your own or integrate the already solution.
+
+In my live as a web developer i worked on a company they use grails and groovy and it is a great framework and programming language but after some time it was obvoisly that some tasks we have to solve grails was not the right choice for doing it but we want to stay use grails so we have to find the grails way how to do that. It costs some time and headache to get it done. In the end it was a good solution but could be solved easily with an other framework that was not compatible with the grails world. To get on speed on develop a new web application it is very good to have some of this fullstack framework but if got more in detail during development it could cause headaches to get things done. 
+
+With that experiences in mind we will not use a full stack framework overall, we will still use the play framework but only for some of our layers were i guess it is the right choice and we have also the possibility later to keep the view part and replace the backend part with an other approach or vis a vis.
 
 \todo{rewrite better english}
 Of course every developer has favorite frameworks and programming languages that he is familiar with. To get on speed during the development i decided to use angularjs for the view, because i had some experience with it and it make it very simple to render web pages based on json data. It has a wide community that is amazing. They are more or less exists support and integration for a lot of thinks like build management integration with bower or plugins to integrate google plus sign with just one line. 
 
-For the API and backend layer i decided to use the play framework
+For the API and backend layer i decided to use the play framework with programming language scala. The play framework i mentioned it earlier is a fullstack framework that you can used to implement entire web application. It has also support of CoffeeScript and other common Web technologies of these days. But it use a server side html render approach that I'am not prefer anymore. So will used only as Rest framework.
 
 ###angularjs
 
+We will use angularjs for the view implementation
 So if you plan to integrate third party services or javascript frameworks look first on the [ngmodules](http://ngmodules.org/) site 
 if exists a module integration for it. 
 
 Thanks to the great modularity of angularjs you can easily extends the angularjs framework. You can write interceptors to extends the ajax functionality of angularjs or with directive you can even extends the html markup with your own tags and so on. If you write a module than keep in mind to implement it with the right abstraction from your app. Maybe if you wish than populate it as open source and offer it for other developers. It is very is to bundle a angularjs module and make it available for other developers. First submit a module description to the ngmodule site so that it can be found. The code of your module should be hosted by github than the ngmodule entry can link to it. 
 
-For an example of an own implemented angularjs modul you can look at the  
+For an example of an own implemented angularjs modul you can look at the [angularjs-crypto](https://github.com/pussinboots/angularjs-crypto) project that i wrote some time. It extends the ajax service of angularjs to receive and send encrypted json data. The use is very simple you can install it with bower and add it as module to your angularjs app and ready to go. For further information have a lokk into the [project description](https://github.com/pussinboots/angularjs-crypto/blob/master/README.md) on github. You could it also use as skeleteon to write your own http interceptor and populate it to the angularjs community.
 
 AngularJs fits perfectly in a HTML 5 web application because they are exists a lot of modules that brings HTML 5 features like local storage to
 
 ###play framework
+
+##IDE
+
+###Eclipse
+
+###Idea
+
+###Sublime
+
+###Codio
+
+##Testing
+
+###karma
+
+###protractor
+
+##Tools
+
+###Guard
+
+###LiveRebel

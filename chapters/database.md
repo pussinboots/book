@@ -1,5 +1,15 @@
 #Database
 
+##Database as Saas
+
+\todo{possibilities of saas database providers}
+
+###ClearDB
+
+###Postgres
+
+###Mongo
+
 ##Lessons learned with play and c3p0
 
 I had big trouble to get the ClearDB SSL communication to work with play 2 and scala. So here my solution.
