@@ -4,40 +4,15 @@
 
 ###nodejs
 
+\todo{npm to manage javascript tools no server side javascript}
+
 ###bower
+
+\todo{bower for javascript dependency management}
 
 ###guard
 
-###ide
-
-I used Eclipse for java development for couple of years than i start to use IntelliJ Idea for Scala/Groovy.
-And now i start to use [sublime 3](http://www.sublimetext.com/3) text editor with some plugins. 
-
-I loved the code reefactoring and search stuff from Eclipse and Idea but afte some experience with 
-Scala and Javascript development with nodejs and angularjs i prefer speed and i always use the console
-for software builds with ant, maven, sbt, npm, bower, ...  and so at the end i only need a quick and fast
-text editor with some autocompletion (but fast autocompletion like in sublime but of course no full autocompletion 
-support for scala or existing functions and methods). So if i start with a new scala framework maybe than i will
-use Idea to get knowlegde about the class structure and methods but if i feel familiar with it than i will use
-sublime and seach for source code if i need to know which class and which method.
-
-Problem with Scala and ide is that things become slow. Good combination is a text editor and play console with
-```bash
-play ~test
-or
-play ~test-only *SomeSpec
-```
-I feel that this is faster than scala compilation in ide.
-
-####Play 2 and angularjs
-
-For a project that frontend code is writen in javascript (angularjs) where i can debug it directly in the browser and try also things out at the console than for the rest backend code i don't need a full ide anymore.
-
-####IDE battle
-
-I still prefer the IntelliJ Idea over Eclipse it is better structured and easier to combine steps like git commit and push for example. But for a beginner of programming i think eclipse is easier to learn for idea you have to get comftable with the idears behind the features it offer. Than i think you could be more productive with idea.
-
-But at the end everyone has to choice it for her or his own.
+\todo{guard to continous development}
 
 ####Fast Coding
 
@@ -148,63 +123,47 @@ Karma starts the firefox with no installed extension, i only found the workaroun
 
 It costs me only minutes to setup guard livereload and it make the coding live so easier sometimes i hit the reload button on the browser so often that i think it will break the next time. I'am a beginner in this unit, integration, e2e test continous local stuff but i can feel the power and the productivity increase of course it depends on a good test suite. But than you can instanly refactor you code and see the konsequences. At the moment i use sublime text editor for coding because it is fast and has all features to code quick. So the time i wait for my ide to come back that i could coding again are gone but also that is true full code completion and other really good features of an ide are missing. But with some terminals running like described above and the code search on the internet i have the feeling i am faster than with an ide. Depends also on the project size. This approach here could also work well if you programm with an ide maybe let me know if it also feel good and productive with an ide besides.
 
+###karma
 
+###ide
 
+I used Eclipse for java development for couple of years than i start to use IntelliJ Idea for Scala/Groovy.
+And now i start to use [sublime 3](http://www.sublimetext.com/3) text editor with some plugins. 
 
-###Continous Testing
+I loved the code reefactoring and search stuff from Eclipse and Idea but afte some experience with 
+Scala and Javascript development with nodejs and angularjs i prefer speed and i always use the console
+for software builds with ant, maven, sbt, npm, bower, ...  and so at the end i only need a quick and fast
+text editor with some autocompletion (but fast autocompletion like in sublime but of course no full autocompletion 
+support for scala or existing functions and methods). So if i start with a new scala framework maybe than i will
+use Idea to get knowlegde about the class structure and methods but if i feel familiar with it than i will use
+sublime and seach for source code if i need to know which class and which method.
 
-####Codio
+Problem with Scala and ide is that things become slow. Good combination is a text editor and play console with
+```bash
+play ~test
+or
+play ~test-only *SomeSpec
+```
+I feel that this is faster than scala compilation in ide.
+
+####Play 2 and angularjs
+
+For a project that frontend code is writen in javascript (angularjs) where i can debug it directly in the browser and try also things out at the console than for the rest backend code i don't need a full ide anymore.
+
+####IDE battle
+
+I still prefer the IntelliJ Idea over Eclipse it is better structured and easier to combine steps like git commit and push for example. But for a beginner of programming i think eclipse is easier to learn for idea you have to get comftable with the idears behind the features it offer. Than i think you could be more productive with idea.
+
+But at the end everyone has to choice it for her or his own.
 
 ##Scala
 
-### ide
+###ide
+
+####eclipse
+
+####idea
 
 ####Sublime
 
 ###sbt
-
-###Continous Testing
-
-##Github
-
-###Git shortcuts
-
-####for Play apps
-Put the following line into your .profile file.
-\begin{codelisting}
-\codecaption{alias for git.}
-\label{code:alias}
-```bash
-gitpushtesteddetail() { git pull && play test && git add -i && git commit && git push; }
-gitpushcompletetesteddetail() { git pull && play test && npm test && git add -i && git commit && git push; }
-
-alias gp=gitpushtesteddetail
-alias gpt=gitpushcompletetesteddetail
-```
-\end{codelisting}
-
-And then you can call
-\begin{codelisting}
-\codecaption{shortcut command for push}
-\label{code:alias}
-```bash
-gp
-```
-\end{codelisting}
-* git pull is performed to get all possible changes
-* play test is performed and if it fails than nothing will be commit. If it succeed than step 2
-* git add -i
-* git commit
-* git push
-
-```bash
-gpt
-```
-* git pull is performed to get all possible changes
-* play test is performed and if it fails than nothing will be commit. If it succeed than step 2
-* npm test is performed and if it fails than nothing will be commit. If it succeed than step 3
-* git add -i
-* git commit
-* git push
-
-Don't use git commit -am that commit in most case to much and the comments are also not detailed enough.

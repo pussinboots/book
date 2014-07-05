@@ -74,3 +74,11 @@ To write your own buildpack you have to create a Github project that contains th
 * bin/release	Provides metadata back to the runtime.
 
 An example for a custom buildpack to support applications written in the [D programming language](http://dlang.org/) can be found [here](https://github.com/pussinboots/heroku-buildpack-d). It could also be used as a starting point to write your own buildpack for your flavored language.
+
+###Staging vs Production
+
+\todo{setup a staging and production vers9ion of the unitcover project}
+
+###Pipelines
+
+\todo{setup a pipeline for release management}

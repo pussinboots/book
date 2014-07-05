@@ -5,13 +5,17 @@ tableofcontents
 preface.md
 mainmatter:
 softcover.md
+develworkflow.md
 project.md
 webapp.md
 database.md
+git.md
 devel.md
 tests.md
 build.md
 deploy.md
+continouse.md
+conclusion.md
 backmatter:
 listoflistings
 listoftodos

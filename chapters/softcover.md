@@ -1,18 +1,21 @@
 # This Book
 
-This chapter illustrate the journey of writing a technical book with Continous Integration support. This book is about how to develop a full functional Web Application with Continous Testing and Integration support. So why not adapt the Software Development paradigms not also to the Development of a whole book. Both is about handling content and building a high quality product. So they are not so much differences between software and books. 
+This chapter introduce the reason and motivation behind this book. This book is about how to develop a full functional Web Application with Continous Testing and Continous Integration. The generic term would be full Automated Development Workflow aka ADW. It is a self created term \todo{clearify the term ADW}. The different process or topics of ADW will be explained chapter by chapter. This book will be practical guide to setup Web Application Automated Development Workflow. In the practical part we will devlop a little full functional Web Application that use JavaScript for the view layer and Scala for the Backend. 
 
-The following chapters are familiar to developers but i guess not so to book writers even technical book writers. My skills to write books are not so good at the moment but i guess it is like discover a new programming language. Like 
-Aristolte said \todo{reference book here} "For the things we have to learn before we can do them, we learn by doing them.”. But I have some experience to write code and also by using a lot of tools that support me to get things done faster and even better. 
+I will try to keep the concept and approaches of AWD programming language independent where it is possible. But this is not alwasy possible for example implements unit tests for the backend will be use the Scala programming language because the backend itself is implemented in. Íf you plan or already have Web Application written in an other programming language than you will implement the unit test in that language of course. The topic End2End Testing of Web Application is for example programing language independent because it is a black box tests so. I will emphasize the parts they are programming independant. 
 
-##What is covered
+The main focus is to keep things short and easy not quick and dirty this is often missunderstood. So the main principal is to reuse tools and frameworks they are already out there and if they miss a feature than develop it and share it with the community of course. Open source lives from the willing to give back. 
 
-This book will cover the entire Development Process from Local Development to Production Deployment. It will also introduce upcoming software and projects that support single parts of the Development Process. Complete tutorials to setup 
+They are a lot of tools and services out there they can be combined to get a Automated Development Workflow from the project concept to the shipped product. That could also be achieved with a lot of closed source products out there maybe even faster. But i promise with the combination of the introducing tools you will get even close sometime even closer to what you can achieve with the commercial products.
 
-For example the [codio](https://codio.com/) website which offer a complete online Web IDE that is free for open source development. It supports a lot of frameworks and programming languages for example the play framework with Scala. Thats right you can coding a Scala project directly in the browser which no need to install the Scala language stack on your local development. And not only coding is possible you could also run your integration or even end 2 end tests directly in the browser it is amazing for a detail explanation look into the \todo{link to Codio chapter} Codio chapter.
+##Chapters
+\todo{chapter overview}
 
-They are a lot of tools and services out there they can be combined to get a complete Development Process from the project concept to the shipped product. That could also be achieved with a lot of closed source products out there maybe even faster. But i promise with the combination of the introducing tools you will get even close sometime even closer to what you can achieve with the commercial products. 
+Chapter by chapter will introduce the different processes they are part of the Automated Development Workflow and each will concentrating of one aspect at a time. 
 
+The chapter Development Workflow decribe the different processes that are part of that entire Workflow. The focus for this chapter is to give theoretical overview what all belongs to the complete Development Workflow. What can be achieved with each process from a overall perspective. \todo{maybe also explaint different roles like developer, tester here but not my focus}
+
+The Project chapter
 We start with an idea we want to implement a little test report service that collect test results from different projects and display them in a nice and readable way. The phase from the idea to an project is cover in the \todo{link to it} Project chapter. What it covers.
 
 * motivation behind the project (the vision)
@@ -31,13 +34,31 @@ The chapter Database give a little overview of Saas database providers and ǵive
 * setup ssh communication with ClearDB
 * little aproach on Data Migration with slick
 
-The chapter Development 
+The chapter GitHub
 
+The chapter Development 
 
 To illustrate the setup of a complete Development Process we will go from the project concept phase to a shipped product.  we will implement a little test report service. For the moment let name it unitcover. For more explanation look into the \todo{link to it} Project chapter.
 
+The chapter Testing
 
-##Github
+The chapter Build Management
+
+The chapter Deployment
+
+The chapter Continous
+
+The chapter Conclusion
+
+##Continous Writing
+
+This chapter illustrate the journey of writing a technical book that self use Continous Integration. So why not adapt the Software Development paradigms not also to the Development of a whole book. Both is about handling content and building a high quality product. So they are not so much differences between software and books. 
+
+The following chapters are familiar to developers but i guess not so to book writers even technical book writers. My skills to write books are not so good at the moment but i guess it is like discover a new programming language. Like 
+Aristolte said \todo{reference book here} "For the things we have to learn before we can do them, we learn by doing them.”. But I have some experience to write code and also by using a lot of tools that support me to get things done faster and even better. 
+
+
+###Github
 
 Github could not only be used to host source code it coul dbe used to host any kind of content preferred ascii based onced. This book starts as a local softcover project but after a while of writing i came to this situation where i want to keep writing on that book but not from my personal computer. So the book content should be available over the internet. Hey I start to think about i used GitHub for my source code why not using it also for the book content. I've found also a lot of people they host her latex based thesis on GitHub.
 
@@ -45,7 +66,7 @@ It could not be wrong to doing this. Then i realized that means the complete boo
 
 To use GitHub has also a lot of advantages for example when comes to collaboration and community. I can imagine by writing a book also commit Pull Request with text fixes or complete new chapters from everybody how wants do collaborate. 
 
-##Softcover
+###Softcover
 
 [Softcover](https://www.softcover.io) is a publishing platform for technical authors. There exists also a very good 
 [Manual](http://manual.softcover.io/) about what softcover is and what it does. The idea to write this book was inspired after
@@ -66,7 +87,7 @@ on how the chapter look like or the whole book it is not possible only with Gith
 [Codio](https://codio.com) it is so much possible if you use Github to host your content. When the book source is at Github why not use 
 a Build Server like Travis CI to build the actual version of your book with softcover and publish it to them.
 
-##Travis
+###Travis
 
 With the following .travis.yml file it was possible to setup a automated build and publishing of that book after i commit changes to Github.
 \todo{link to content not embed}
@@ -99,7 +120,7 @@ because it has to install the complete texlive latex distribution, then softcove
 \todo{reduce build time or give a hint}
 But what we have achieved so far is that after a commit to github rather than ten minutes (or less more) you have a new published version of pdf, mobi and epub ready for reading online on the [softcover](https://www.softcover.io) plattform.
 
-##Guard
+###Guard
 
 The [Guard](https://github.com/guard/guard) is a command line tool to handle file changes. With that tool you can setup very easily a complete pdf latex build that use the softcover tool to generate every time you save changes on that book a new version of the resulting pdf document.
 
@@ -140,3 +161,7 @@ The last thing to do is to start the Guard tool with the following command
 	guard start
 ```
 now it watch for changes you did on the markdown files of the book.
+
+###Codio
+
+For example the [codio](https://codio.com/) website which offer a complete online Web IDE that is free for open source development. It supports a lot of frameworks and programming languages for example the play framework with Scala. Thats right you can coding a Scala project directly in the browser which no need to install the Scala language stack on your local development. And not only coding is possible you could also run your integration or even end 2 end tests directly in the browser it is amazing for a detail explanation look into the \todo{link to Codio chapter} Codio chapter.
