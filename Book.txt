@@ -6,10 +6,10 @@ preface.md
 mainmatter:
 softcover.md
 develworkflow.md
+git.md
 project.md
 webapp.md
 database.md
-git.md
 devel.md
 tests.md
 build.md
