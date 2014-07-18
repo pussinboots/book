@@ -1,3 +1,4 @@
 repo: pussinboots/vagrant-devel-softcover
 folder: /vagrant/project/book
 main: softcover build
+hint: Problems on Windows 7 with git clone to get a ride of delete /vagrant/project/book folder and perform a fresh git clone https://github.com/pussinboots/book.git from inside the virtualbox machine.
