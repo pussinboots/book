@@ -2,6 +2,8 @@
 
 ##SBT Build
 
+The [sbt](http://www.scala-sbt.org/) build tool is used to build the play backend part of this application. With a little trick we will integrate npm task execution into sbt build lifecycle management.
+
 \begin{codelisting}
 \codecaption{npm play un hook}
 \label{code:npmplay}
@@ -43,6 +45,9 @@ playRunHooks <+= baseDirectory.map(base => NPMPlayRunHook())
 \end{codelisting}
 
 That setup perform npm install now every time when play is stated in run mode and code reloading is executed.
+##NPM
+
+The [npm](https://www.npmjs.org/) is the build tool for nodejs javascript projectsand very simple to configure and to use.  
 
 ##Travis CI
 
