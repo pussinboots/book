@@ -1,1 +1,3 @@
 repo: pussinboots/vagrant-devel-softcover
+folder: /vagrant/project/book
+main: softcover build
