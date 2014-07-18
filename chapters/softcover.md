@@ -120,6 +120,10 @@ because it has to install the complete texlive latex distribution, then softcove
 \todo{reduce build time or give a hint}
 But what we have achieved so far is that after a commit to github rather than ten minutes (or less more) you have a new published version of pdf, mobi and epub ready for reading online on the [softcover](https://www.softcover.io) plattform.
 
+###Softcover Service
+
+The automated build of books with Travis Ci has allure but takes to long. So i started the [Softcover Service Project](https://github.com/pussinboots/heroku-softcover) that offer a simple Rest Api to build softcover books by checkout the book project from github and perform softcover build. A pdf version of this book can simple be build by open the following [url](http://nnamretti.ddns.net/api/build/pdf/pussinboots/book). It is hosted on an Amazon Web Service EC2 micro instance that can handle some load but it is still an prototyp as proof of concept. Completely implements as nodejs server. If you are intressting in that project than look on the github project page. Contribution is of course welcomed.  
+
 ###Guard
 
 The [Guard](https://github.com/guard/guard) is a command line tool to handle file changes. With that tool you can setup very easily a complete pdf latex build that use the softcover tool to generate every time you save changes on that book a new version of the resulting pdf document.
