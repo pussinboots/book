@@ -115,7 +115,7 @@ Thanks to the great modularity of angularjs you can easily extends the angularjs
 
 For an example of an own implemented angularjs modul you can look at the [angularjs-crypto](https://github.com/pussinboots/angularjs-crypto) project that i wrote some time. It extends the ajax service of angularjs to receive and send encrypted json data. The use is very simple you can install it with bower and add it as module to your angularjs app and ready to go. For further information have a lokk into the [project description](https://github.com/pussinboots/angularjs-crypto/blob/master/README.md) on github. You could it also use as skeleteon to write your own http interceptor and populate it to the angularjs community.
 
-AngularJs fits perfectly in a HTML 5 web application because they are exists a lot of modules that brings HTML 5 features like local storage to
+AngularJs fits perfectly in a HTML 5 web application because they are a lot of modules that brings HTML 5 features like local storage simple to your app. Explore the [ngmodule](http://ngmodules.org/) page to find angularjs module extensions.
 
 ###play framework
 
