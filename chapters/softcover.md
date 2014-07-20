@@ -1,22 +1,40 @@
 # This Book
 
-This chapter introduce the reason and motivation behind this book. This book is about how to develop a full functional Web Application with Continous Testing and Continous Integration. The generic term would be full Automated Development Workflow aka ADW. It is a self created term \todo{clearify the term ADW}. The different process or topics of ADW will be explained chapter by chapter. This book will be practical guide to setup Web Application Automated Development Workflow. In the practical part we will devlop a little full functional Web Application that use JavaScript for the view layer and Scala for the Backend. 
+This chapter introduce the reason and motivation behind this book. This book is about how to develop a full functional Web Application with Continous 
+Testing and Continous Integration. The generic term would be full Automated Development Workflow aka ADW. It is a self created term 
+\todo{clearify the term ADW}. The different process or topics of ADW will be explained chapter by chapter. 
+This book will be practical guide to setup Web Application Automated Development Workflow. In the practical part we will devlop a little full 
+functional Web Application that use JavaScript for the view layer and Scala for the Backend. 
 
-I will try to keep the concept and approaches of AWD programming language independent where it is possible. But this is not alwasy possible for example implements unit tests for the backend will be use the Scala programming language because the backend itself is implemented in. Íf you plan or already have Web Application written in an other programming language than you will implement the unit test in that language of course. The topic End2End Testing of Web Application is for example programing language independent because it is a black box tests so. I will emphasize the parts they are programming independant. 
+I will try to keep the concept and approaches of AWD programming language independent where it is possible. But this is not alwasy possible 
+for example implements unit tests for the backend will be use the Scala programming language because the backend itself is implemented in. 
+Íf you plan or already have Web Application written in an other programming language than you will implement the unit test in that language of course. 
+The topic End2End Testing of Web Application is for example programing language independent because it is a black box tests so. I will emphasize the 
+parts they are programming independant. 
 
-The main focus is to keep things short and easy not quick and dirty this is often missunderstood. So the main principal is to reuse tools and frameworks they are already out there and if they miss a feature than develop it and share it with the community of course. Open source lives from the willing to give back. 
+The main focus is to keep things short and easy not quick and dirty this is often missunderstood. So the main principal is to reuse tools and frameworks 
+they are already out there and if they miss a feature than develop it and share it with the community of course. Open source lives from the willing 
+to give back. 
 
-They are a lot of tools and services out there they can be combined to get a Automated Development Workflow from the project concept to the shipped product. That could also be achieved with a lot of closed source products out there maybe even faster. But i promise with the combination of the introducing tools you will get even close sometime even closer to what you can achieve with the commercial products.
+They are a lot of tools and services out there they can be combined to get a Automated Development Workflow from the project concept to the shipped 
+product. That could also be achieved with a lot of closed source products out there maybe even faster. But i promise with the combination of the 
+introducing tools you will get even close sometime even closer to what you can achieve with the commercial products.
 
 ##Chapters
 \todo{chapter overview}
 
-Chapter by chapter will introduce the different processes they are part of the Automated Development Workflow and each will concentrating of one aspect at a time. 
+Chapter by chapter will introduce the different processes they are part of the Automated Development Workflow and each will concentrating of one 
+aspect at a time. 
 
-The chapter Development Workflow decribe the different processes that are part of that entire Workflow. The focus for this chapter is to give theoretical overview what all belongs to the complete Development Workflow. What can be achieved with each process from a overall perspective. \todo{maybe also explaint different roles like developer, tester here but not my focus}
+The chapter Development Workflow decribe the different processes that are part of that entire Workflow. The focus for this chapter is to give 
+theoretical overview what all belongs to the complete Development Workflow. What can be achieved with each process from a overall perspective. 
+\todo{maybe also explaint different roles like developer, tester here but not my focus}
+
+The chapter GitHub
 
 The Project chapter
-We start with an idea we want to implement a little test report service that collect test results from different projects and display them in a nice and readable way. The phase from the idea to an project is cover in the \todo{link to it} Project chapter. What it covers.
+We start with an idea we want to implement a little test report service that collect test results from different projects and display them in 
+a nice and readable way. The phase from the idea to an project is cover in the \todo{link to it} Project chapter. What it covers.
 
 * motivation behind the project (the vision)
 * first draft of the architecture 
@@ -28,17 +46,12 @@ The chapter Web Application give a little overview about technology we will use 
 * capabilities of testing a web app
 * tools to increase productivity and quality
 
-The chapter Database give a little overview of Saas database providers and ǵive a detail view on the ClearDB provider and why we choose them.
-
-* tutorial to setup ClearDB with play framework
-* setup ssh communication with ClearDB
-* little aproach on Data Migration with slick
-
-The chapter GitHub
+The chapter Database
 
 The chapter Development 
 
-To illustrate the setup of a complete Development Process we will go from the project concept phase to a shipped product.  we will implement a little test report service. For the moment let name it unitcover. For more explanation look into the \todo{link to it} Project chapter.
+To illustrate the setup of a complete Development Process we will go from the project concept phase to a shipped product.  we will implement a little 
+test report service. For the moment let name it unitcover. For more explanation look into the \todo{link to it} Project chapter.
 
 The chapter Testing
 
@@ -52,15 +65,20 @@ The chapter Conclusion
 
 ##Continous Writing
 
-This chapter illustrate the journey of writing a technical book that self use Continous Integration. So why not adapt the Software Development paradigms not also to the Development of a whole book. Both is about handling content and building a high quality product. So they are not so much differences between software and books. 
+This chapter illustrate the journey of writing a technical book that self use Continous Integration. So why not adapt the Software Development paradigms 
+not also to the Development of a whole book. Both is about handling content and building a high quality product. So they are not so much differences 
+between software and books. 
 
-The following chapters are familiar to developers but i guess not so to book writers even technical book writers. My skills to write books are not so good at the moment but i guess it is like discover a new programming language. Like 
-Aristolte said \todo{reference book here} "For the things we have to learn before we can do them, we learn by doing them.”. But I have some experience to write code and also by using a lot of tools that support me to get things done faster and even better. 
+The following chapters are familiar to developers but i guess not so to book writers even technical book writers. My skills to write books are not so 
+good at the moment but i guess it is like discover a new programming language. Like Aristolte said \todo{reference book here} "For the things we have 
+to learn before we can do them, we learn by doing them.”. But I have some experience to write code and also by using a lot of tools that support me 
+to get things done faster and even better. 
 
 
 ###Github
 
-Github could not only be used to host source code it coul dbe used to host any kind of content preferred ascii based onced. This book starts as a local softcover project but after a while of writing i came to this situation where i want to keep writing on that book but not from my personal computer. So the book content should be available over the internet. Hey I start to think about i used GitHub for my source code why not using it also for the book content. I've found also a lot of people they host her latex based thesis on GitHub.
+Github could not only be used to host source code it coul dbe used to host any kind of content preferred ascii based onced. This book starts as a 
+local softcover project but after a while of writing i came to this situation where i want to keep writing on that book but not from my personal computer. So the book content should be available over the internet. Hey I start to think about i used GitHub for my source code why not using it also for the book content. I've found also a lot of people they host her latex based thesis on GitHub.
 
 It could not be wrong to doing this. Then i realized that means the complete book raw content is public available but maybe the time where books and even the raw content should be private are over. At the moment I'am not planning to sell the book but even If i do for example with the purchase capabilities of the softcover platform than i belief that a lot of readers are willing to pay the price and not download the public latex content and build her own version without paying. 
 
