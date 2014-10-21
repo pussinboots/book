@@ -1,5 +1,21 @@
 #Github
 
+##Usefuöl git commands
+
+To undo a git reset you have to perform
+
+git reset HEAD@{3}
+so you should be able to do
+
+git reset HEAD@{N}
+But if you have done git reset using
+
+git reset HEAD~3
+you will need to do
+
+git reset HEAD@{1}
+As {N} represents number of operations in Reflog. As Mark pointed out in the comments.
+
 ##Git shortcuts
 
 ###for Play apps
